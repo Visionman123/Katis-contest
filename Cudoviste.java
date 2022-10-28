@@ -17,16 +17,26 @@ public class Cudoviste {
         int column = sc.nextInt();
 
         char[][] parking = new char[row][column];
-        char[] inputarr = new char[100];
+
+        char[] inputarr = new char[1000];
 
         // Input parking slots
         for (int i = 0; i < row; i++) {
             String input = sc.next();
-            
-            inputarr = input.toCharArray(); 
             for (int j = 0; j < column; j++) {
-                parking[i][j] = (char)inputarr[j+1];
+                inputarr[j] = (char) (input.charAt(j) + '0'); 
+                parking[i][j] = (char) input.charAt(j);
             }
+        }
+
+        String str = "Scaler"; // Given String
+
+        // Creating array of string length
+        char[] arr = new char[str.length()];
+    
+        // Copy character by character into array
+        for (int i = 0; i < str.length(); i++) {
+          arr[i] = str.charAt(i);
         }
 
         for (int i = 0; i < row - 1; i++)
