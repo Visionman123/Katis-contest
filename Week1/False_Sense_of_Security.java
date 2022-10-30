@@ -1,4 +1,4 @@
-package Frankfurt.Katis;
+package Frankfurt.Katis.Week1;
 
 import java.util.*; //scanner + hashmap
 
