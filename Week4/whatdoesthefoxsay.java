@@ -17,8 +17,7 @@ public class whatdoesthefoxsay {
 
                 if (animalsound.equals("what does the fox say?")) 
                     break;
-
-            
+                    
                 notfox.add(animalsound.split(" ")[2]);
             }
 

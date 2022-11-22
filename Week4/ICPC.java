@@ -2,6 +2,7 @@ package Frankfurt.Katis.Week4;
 
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.*;
 
 public class ICPC {
     public static void main(String[] args) {
@@ -13,7 +14,8 @@ public class ICPC {
 
         int limit = 0;
 
-        HashSet<String> value = new HashSet<>();
+        //HashSet<String> value = new HashSet<>();
+        ArrayList<String> value = new ArrayList<String>();
 
         for (int i = 0; i < n; i++) {
             String line = sc.nextLine();
